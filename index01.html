@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <title>Instagram | Login</title>
-  </head>
-  <body>
-    <div class="login__column">
-      <img src="images/phoneImage.png" alt="phoneImage" class="login__phoneimage">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Login | Instagram</title>
+</head>
+
+<body>
+  <div class="login__column">
+    <img src="images/phoneImage.png" alt="phoneImage" class="login__phoneimage">
+  </div>
+  <div class="login__column">
+    <div class="login__box">
+      <img src="images/logo.png" alt="logo" class="login__logo">
     </div>
-    <div class="login__column">
-      <div class="login__box">
-        <img src="images/logo.png" alt="logo" class="login__logo">
+    <form class="login__form" action="index.html" method="post">
+      <input type="text" name="username" placeholder="Username" class="login__username" required>
+      <div class="login__form-box">
+        <input type="password" name="password" placeholder="Password" class="login__password" required>
+        <a href="#">Forgot?</a>
       </div>
-      <form class="login__form" action="index.html" method="post">
-        <input type="text" name="username" value="Username"class="login__username">
-        <input type="password" name="password" value="Password"class="login__password">
-        <input type="submit" value="Log in"class="login__submit">
-      </form>
-      <span class="login__divider">or</span>
-      <a href="#">Log in with Facebook</a>
-    <div class="login__box"></div>
-    <div class="login__box"></div></div>
-  </body>
+      <input type="submit" value="Log in" class="login__submit">
+    </form>
+    <span class="login__divider">or</span>
+    <a href="#" class="login__fb-link">
+      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      <span class="login__text">Log in with Facebook</span>
+    </a>
+    <div class="login__box">
+      <span class="login__text">Don't have an account?</span>
+      <a href="#" class="login__signup">Sign up</a>
+    </div>
+    <div class="login__box">
+      <span class="login__text">Get the app.</span>
+      <div class="login__appstores">
+        <a href="#" class="login__appstore">
+          <img src="images/ios.png">
+        </a>
+        <a href="#" class="login__appstore">
+          <img src="images/android.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <ul class="footer__nav">
+      <li class="foorer__item"><a href="#" class="footer__link">about us</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">support</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">blog</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">press</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">api</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">jobs</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">privacy</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">terms</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">directory</a></li>
+      <li class="foorer__item"><a href="#" class="footer__link">language</a></li>
+    </ul>
+    <span class="footer__copy">© 2017 instagram</span>
+  </footer>
+</body>
+
 </html>
